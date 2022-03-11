@@ -1,0 +1,68 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    border-radius: 20px;
+    animation: enterModal .5s forwards;
+    h3{
+      position: absolute;
+      top: 60px;
+    }
+    .actionArea{
+      display: flex;
+      position: absolute;
+      bottom: 40px;
+      width: 70%;
+      justify-content: space-around;
+      align-items: center;
+      button{
+        height: 40px;
+        width: 50%;
+        margin: 0 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    .closeButton{
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
+
+@keyframes enterModal {
+  from{
+    top: -600px;
+    
+  }to{
+    top: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container{
+    .wrapper{
+      width: 90%;
+      height: 30%;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.container{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  form{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+      margin-bottom: 20px;
+    }
+    label{
+      margin-bottom: 5px;
+      margin-left: 10px;
+      font-size: 1.3rem;
+    }
+    input{
+      height: 50px;
+      padding: 0 20px;
+      padding-right: 45px;
+      font-size: 1.3rem;
+      color: gray;
+    }
+    .email, .senha{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 10px auto;
+      position: relative;
+    }
+    .enter{
+      margin-top: 30px;
+      width: 30%;
+    }
+    .create{
+      width: 40%;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 40px auto;
+      width: 80%;
+      position: relative;
+      &::after{
+        content: "";
+        display: flex;
+        width: 45%;
+        height: 1px;
+        border: 1px thick gray;
+        color: gray;
+        background-color: gray;
+        position: absolute;
+        right: 0;
+      }
+      &::before{
+        content: "";
+        display: flex;
+        width: 45%;
+        height: 1px;
+        border: 1px thick gray;
+        color: gray;
+        background-color: gray;
+        position: absolute;
+        left: 0;
+      }
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    input, button{
+      border-radius: 20px;
+    }
+    .iconsPass{
+      position:absolute;
+      top: 50%;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  .left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    img{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .container{
+    form{
+      width: 100%;
+      margin: 0 auto;
+      .email, .senha{
+        width: 80%;
+      }
+      .enter{
+        width: 50%;
+      }
+      .create{
+        width: 50%;
+      }
+    }
+    .left{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    border-radius: 20px;
+    transform: translateY(40px);
+    animation: enterModal .5s forwards;
+    h3{
+      position: absolute;
+      top: 40px;
+      font-size: 2rem;
+    }
+    .editArea{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      input{
+        height: 40px;
+        padding: 0 30px;
+        border-radius: 10px;
+        font-weight: 700;
+        color: gray;
+        font-size: 1.3rem;
+      }
+      label{
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+      }
+      .inputArea{
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+        width: 100%;
+      }
+      #description{
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 700;
+        color: gray;
+        font-size: 1.2rem;
+      }
+    }
+    .actionArea{
+      display: flex;
+      position: absolute;
+      bottom: 40px;
+      width: 70%;
+      justify-content: space-around;
+      align-items: center;
+      button{
+        height: 40px;
+        width: 50%;
+        margin: 0 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    .closeButton{
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
+
+@keyframes enterModal {
+  from{
+    top: -600px;
+    
+  }to{
+    top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .container{
+    .wrapper{
+      height: 60%;
+      width: 90%;
+      transform: translateY(30%);
+      h3{
+        font-size: 1.5rem;
+      }
+      .editArea{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        input{
+          height: 40px;
+          padding: 0 30px;
+          border-radius: 10px;
+          font-weight: 700;
+          color: gray;
+          font-size: 1.3rem;
+        }
+        label{
+          margin-bottom: 5px;
+          font-size: 1.3rem;
+        }
+        .inputArea{
+          display: flex;
+          flex-direction: column;
+          margin: 10px auto;
+          width: 100%;
+        }
+        #description{
+          padding: 10px 30px;
+          border-radius: 10px;
+          font-weight: 700;
+          color: gray;
+          font-size: 1.2rem;
+          height: 100px;
+        }
+      }
+      .actionArea{
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        button{
+          height: 40px;
+          width: 60%;
+          margin: 0 8px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

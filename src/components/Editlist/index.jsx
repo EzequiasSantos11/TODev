@@ -53,8 +53,7 @@ export default function Editlist({closeEdit, id, title}){
         </div>
         <div className={Styles.actionArea}>
           <button onClick={handleSave}>Salvar</button>
-          <button >Cancelar</button>
-          <button >Excluir</button>
+          <button onClick={closeEdit}>Cancelar</button>
         </div>
         <div className={Styles.closeButton}>
           <CloseIcon onClick={closeEdit}/>

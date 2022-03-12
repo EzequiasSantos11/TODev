@@ -130,14 +130,19 @@
  .container{
    header{
      position: absolute;
-     width: 14rem;
+     width: 12rem;
      z-index: 9999;
      background: white;
      padding-top: 60px;
      left: -20rem;
      top: 5rem;
-     z-index: 999;
+     z-index: 9999;
      transition: all .5s ease-in-out;
+     nav{
+       margin: 0;
+       margin-top: 20px;
+       margin-left: 20px;
+     }
     }
     .openMenu{
       left: 0;  
@@ -145,22 +150,29 @@
     .list{
       .cabecalho{
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        h1{
+          font-size: 18px;
+          width: 80%;
+          text-align: center;
+        }
         .menuIcon{
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          height: 40px;
-          width: 40px;
+          height: 30px;
+          width: 30px;
           position: absolute;
           z-index: 9999;
-          top: 20px;
-          left: 15px;
+          top: 25px;
+          left: 20px;
           transition: all .5s ease;
           .line{
             display: block;
             width: 100%;
-            height: 5px;
+            height: 3px;
             background: #fff;
           }
           .line1{
@@ -174,7 +186,7 @@
           .line1{
             transform: rotate(50deg);
             position: absolute;
-            top: 18px;
+            top: 15px;
             transition: all .5s ease;
           }
           .line2{
@@ -190,7 +202,6 @@
           bottom: 60px;
           background: blueviolet;
         }
-        
       }
     }
   } 

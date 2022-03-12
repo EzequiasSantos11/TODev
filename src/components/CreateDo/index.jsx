@@ -55,7 +55,7 @@ export default function CreateDo({closeCreate}){
         </div>
         <div className={Styles.actionArea}>
           <button onClick={handleSave}>Salvar</button>
-          <button >Cancelar</button>
+          <button onClick={closeCreate}>Cancelar</button>
         </div>
         <div className={Styles.closeButton}>
           <CloseIcon onClick={closeCreate}/>

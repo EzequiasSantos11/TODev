@@ -93,9 +93,9 @@
 @media (max-width: 800px) {
   .container{
     .wrapper{
-      height: 60%;
+      height: 80%;
       width: 90%;
-      transform: translateY(30%);
+      // transform: translateY(30%);
       h3{
         font-size: 1.5rem;
       }
@@ -122,28 +122,30 @@
           width: 100%;
         }
         #description{
-          padding: 10px 30px;
+          padding: 10px 20px;
           border-radius: 10px;
           font-weight: 700;
           color: gray;
-          font-size: 1.2rem;
-          height: 100px;
+          font-size: 14px;
+          height: 90px;
         }
       }
       .actionArea{
         display: flex;
         position: absolute;
-        bottom: 40px;
-        width: 100%;
+        bottom: 20px;
+        width: 80%;
         justify-content: space-around;
         align-items: center;
         button{
+          font-size: 12px;
+          font-weight: 800;
           height: 40px;
-          width: 60%;
-          margin: 0 8px;
+          width: 40%;
           border-radius: 10px;
           text-transform: uppercase;
           cursor: pointer;
+          color: rgba(0,0,0,0.7);
         }
       }
     }

@@ -14,7 +14,7 @@ export default function DeleteList({closeDelete, id, title}){
         <h3>Tem certeza que deseja deletar:</h3>
         <h2>{title}</h2>
         <div className={Styles.actionArea}>
-          <button>Cancelar</button>
+          <button onClick={closeDelete}>Cancelar</button>
           <button onClick={handleDelete}>Deletar</button>
         </div>
         <div className={Styles.closeButton}>
